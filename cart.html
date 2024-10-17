@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">NutriBazaar</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="protein.html">Proteins</a></li>
+                    <li><a href="vitamin.html">Vitamins</a></li>
+                    <li><a href="milk_suppliment.html">Milk boosters</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">🛒Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h1>🛒 Your Shopping Cart</h1>
+
+        <table class="cart-table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+               
+            </tbody>
+        </table>
+
+        <div class="total-price-container">
+            <strong>Total Price: $</strong><span id="totalPrice">0.00</span>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        <p id="emptyCartMessage" class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
